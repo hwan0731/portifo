@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home - My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              pretendard: ['Pretendard', 'sans-serif'],
+            },
+            colors: {
+              'soft-gray': '#f3f4f6',
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="font-pretendard bg-white text-gray-900">
+    <!-- 헤더 -->
+    <header class="fixed w-full bg-white shadow-md z-50 transition-all">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">My Portfolio</h1>
+        <nav class="space-x-4 nav-links">
+          <a href="index.html" class="text-blue-500 font-semibold">Home</a>
+          <a href="about.html">About</a>
+          <a href="works.html">Works</a>
+          <a href="design.html">Design</a> 
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="h-screen bg-cover bg-center flex items-center justify-center pt-20"
+      style="background-image: url('images/image.png');">
+      <div class="bg-white bg-opacity-80 p-10 rounded-xl text-center max-w-2xl shadow-lg" data-aos="fade-up">
+        <h2 class="text-5xl font-bold mb-4">안녕하세요, Hwanhee입니다.</h2>
+        <p class="text-lg text-gray-700">
+          콘텐츠 기획과 시각적 스토리텔링을 즐기는 크리에이터입니다.<br>
+          감각적인 디자인과 실용적인 결과물을 추구합니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="bg-gray-50 text-center" data-aos="fade-up">
+      <h2 class="section-title">👋 About Me</h2>
+      <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-8">
+        저는 다양한 프로젝트에서 콘텐츠 제작, 디지털 미디어 운영, 시각자료 디자인 경험을 쌓았습니다.
+        주도적으로 생각하고, 팀과 협업하며 결과를 이끌어내는 것을 좋아합니다.
+      </p>
+      <div class="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
+        <div class="bg-white rounded-lg shadow-md p-6 w-64 card-hover" data-aos="zoom-in">
+          <h3 class="text-xl font-semibold mb-2">🎥 콘텐츠 제작</h3>
+          <p class="text-gray-600 text-sm">영상, 숏폼, SNS 콘텐츠 운영 경험</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 w-64 card-hover" data-aos="zoom-in" data-aos-delay="100">
+          <h3 class="text-xl font-semibold mb-2">🎨 디자인</h3>
+          <p class="text-gray-600 text-sm">포스터, 카드뉴스, 피그마 UI 작업</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 w-64 card-hover" data-aos="zoom-in" data-aos-delay="200">
+          <h3 class="text-xl font-semibold mb-2">📢 커뮤니케이션</h3>
+          <p class="text-gray-600 text-sm">기획·홍보·운영 서포터즈 활동 경험</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 대표 작품 미리보기 -->
+    <section class="bg-soft-gray" data-aos="fade-up">
+      <h3 class="section-title">✨ 대표 작품 미리보기</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 container mx-auto px-6">
+        <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover">
+          <img src="images/image12.png" alt="작품1" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">진로로드맵 경진대회</h4>
+            <p class="text-sm text-gray-600">최우수상 수상작 / 발표자료 기획 및 디자인</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover">
+          <img src="images/image10.jpg" alt="작품2" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">야구클리닉 콘텐츠</h4>
+            <p class="text-sm text-gray-600">숏폼 영상 제작 / KBO 릴스 업로드</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover">
+          <img src="images/image14.jpg" alt="작품3" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">페스티벌 시월</h4>
+            <p class="text-sm text-gray-600">서포터즈 콘텐츠 제작 및 인스타 업로드</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

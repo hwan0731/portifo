@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Design - My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Pretendard', sans-serif;
+      }
+      /* 기하학적 배치용 CSS */
+      .geom-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 200px;
+        gap: 16px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+      }
+      .geom-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 1rem;
+        box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        cursor: pointer;
+        transition: transform 0.4s ease;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .geom-item:hover {
+        transform: scale(1.05) rotate(3deg);
+        z-index: 10;
+        box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+      }
+      /* 그리드 영역 조절 (기하학적 효과) */
+      .span-col-2 {
+        grid-column: span 2;
+      }
+      .span-row-2 {
+        grid-row: span 2;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- 헤더 -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">My Portfolio</h1>
+        <nav class="space-x-4 text-sm md:text-base">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="works.html">Works</a>
+          <a href="design.html" class="text-blue-500 font-semibold">Design</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 타이틀 -->
+    <section class="pt-32 pb-10 text-center" data-aos="fade-up">
+      <h1 class="text-5xl font-bold mb-2">Design Portfolio</h1>
+      <p class="text-lg text-gray-600">디자인 작품 갤러리</p>
+    </section>
+
+    <!-- 사진 갤러리 -->
+    <main class="geom-container" data-aos="fade-up" data-aos-delay="150">
+      <div
+        class="geom-item span-col-2 span-row-2"
+        style="background-image: url('images/image1.png');"
+        data-aos="zoom-in"
+      ></div>
+      <div
+        class="geom-item"
+        style="background-image: url('images/image2.png');"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+      ></div>
+      <div
+        class="geom-item"
+        style="background-image: url('images/image3.png');"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      ></div>
+      <div
+        class="geom-item span-row-2"
+        style="background-image: url('images/image4.png');"
+        data-aos="zoom-in"
+        data-aos-delay="300"
+      ></div>
+      <div
+        class="geom-item"
+        style="background-image: url('images/image5.png');"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      ></div>
+      <div
+        class="geom-item"
+        style="background-image: url('images/image6.png');"
+        data-aos="zoom-in"
+        data-aos-delay="500"
+      ></div>
+      <div
+        class="geom-item span-col-2"
+        style="background-image: url('images/image7.png');"
+        data-aos="zoom-in"
+        data-aos-delay="600"
+      ></div>
+      <div
+        class="geom-item"
+        style="background-image: url('images/image8.png');"
+        data-aos="zoom-in"
+        data-aos-delay="700"
+      ></div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
+  </body>
+</html>

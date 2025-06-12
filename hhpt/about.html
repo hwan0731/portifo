@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About - HWANHEE Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Pretendard', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- 헤더 -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">HWANHEE Portfolio</h1>
+        <nav class="space-x-4 text-sm md:text-base">
+          <a href="index.html">Home</a>
+          <a href="about.html" class="text-blue-500 font-semibold">About</a>
+          <a href="works.html">Works</a>
+           <a href="design.html">Design</a> 
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 커버 이미지 -->
+    <section class="relative h-screen bg-cover bg-center flex items-center justify-center pt-16"
+             style="background-image: url('https://blog.adobe.com/ko/publish/2019/03/19/media_1681273e373afb30b153cb6de6483a4a2689e4df4.png?width=2000&format=webply&optimize=medium');">
+      <div class="bg-black bg-opacity-50 w-full h-full absolute top-0 left-0 z-0"></div>
+      <div class="z-10 text-center text-white px-6" data-aos="fade-up">
+        <h1 class="text-5xl font-bold mb-4">About Me</h1>
+        <p class="text-xl">최적의 사용자 경험을 제공하는 것을 목표로 하는</p>
+      </div>
+    </section>
+
+    <!-- 본문 섹션 -->
+    <main class="pt-32 space-y-32 pb-24">
+      <!-- 소개 섹션 -->
+      <section class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10" data-aos="fade-up">
+        <!-- 프로필 이미지 -->
+        <div class="w-40 h-40 rounded-full overflow-hidden shadow-lg">
+          <img src="https://ilovecharacter.com/news/data/20240426/p1065596372548020_924_thum.png" alt="프로필 사진" class="object-cover w-full h-full" />
+        </div>
+        <!-- 텍스트 -->
+        <div class="md:w-2/3 text-lg leading-relaxed">
+          <h2 class="text-3xl font-bold mb-3">안녕하세요!</h2>
+          <p>
+            "감각을 형태로, 이야기를 영상으로 표현하는 디자이너입니다. <strong>사용자와의 소통을 중심에 두고, 디자인과 영상의 경계를 넘나들며 새로운 경험을 만듭니다."</strong>
+          
+          </p>
+        </div>
+      </section>
+
+      <!-- 철학 섹션 -->
+      <section class="container mx-auto px-6 text-center" data-aos="fade-up">
+        <h2 class="text-4xl font-bold mb-6">Philosophy</h2>
+        <p class="text-xl italic max-w-3xl mx-auto">
+          "기억에 남는 경험은 섬세한 디테일에서 시작된다고 믿습니다." 
+          <br />
+          복잡함 속에서 본질을 꺼내어, <span class="font-semibold">간결하게 표현하는 것이 제 작업의 중심입니다.</span>
+        </p>
+      </section>
+
+      <!-- 경험 섹션 -->
+      <section class="container mx-auto px-6" data-aos="fade-up">
+        <h2 class="text-4xl font-bold mb-6 text-center">Experience</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg">
+          <div class="border-l-4 border-blue-400 pl-4">
+            <p class="font-semibold">경성대학교 대동제 숏폼영상 공모전 최우수상 입상 </p>
+            <p class="text-sm text-gray-500">2023.05.19</p>
+          </div>
+          <div class="border-l-4 border-blue-400 pl-4">
+            <p class="font-semibold">2023 청끌기업 홍보서포터즈 </p>
+            <p class="text-sm text-gray-500">2023.07.01 ~ 2023.09.30</p>
+          </div>
+          <div class="border-l-4 border-blue-400 pl-4">
+            <p class="font-semibold">[부산광역시자원봉사센터]대학생재능기부연합봉사단 탐탐팀 활동 </p>
+            <p class="text-sm text-gray-500">2022.07.01 ~ 2022.12.26</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 스킬 섹션 -->
+      <section class="container mx-auto px-6" data-aos="fade-up">
+        <h2 class="text-4xl font-bold mb-6 text-center">Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-lg">
+          <div class="bg-gray-100 p-4 rounded-lg shadow-sm">Photoshop</div>
+          <div class="bg-gray-100 p-4 rounded-lg shadow-sm">Illustrator</div>
+          <div class="bg-gray-100 p-4 rounded-lg shadow-sm">Premiere Pro</div>
+          <div class="bg-gray-100 p-4 rounded-lg shadow-sm">Figma</div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 스크립트 -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
+  </body>
+</html> 
